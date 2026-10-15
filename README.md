@@ -19,18 +19,18 @@
 ## 📖 Description
 
 Formation pratique au Deep Learning : **perceptron**, **MLP**, **CNN** et **RNN**.
-6 exercices Jupyter progressifs, du NumPy from scratch à Keras/TensorFlow.
+12 notebooks Jupyter progressifs, du NumPy from scratch à Keras/TensorFlow — chaque exercice existe en 2 versions : la version originale (`exo_*`) et la version PDF corrigée (`exo_pdf_*`).
 
 ## 🎯 Exercices
 
 | # | Notebook | Sujet | Compétences |
 |---|----------|-------|-------------|
-| 1 | `exo_1_perceptron.ipynb` | Perceptron — portes AND/NOR | NumPy, gradient descent, classification binaire |
-| 2 | `exo_2_iris.ipynb` | MLP sur Iris | Keras, MLP, classification multi-classes |
-| 2 bis | `exo_2bis_titanic.ipynb` | MLP sur Titanic | Preprocessing, comparaison 4/16/64 neurones |
-| 3 | `exo_3_cnn_mnist.ipynb` | CNN sur MNIST | Conv2D, MaxPooling, images 28×28 |
-| 4 | `exo_4_cnn_fashion_mnist.ipynb` | CNN sur Fashion-MNIST | CNN, classification 10 classes |
-| 5 | `exo_5_rnn_texte.ipynb` | RNN — génération de texte | RNN/LSTM, NLP, prédiction mot suivant |
+| 1 | `exo_1_perceptron.ipynb` / `exo_pdf_1_perceptron.ipynb` | Perceptron — portes AND/NOR | NumPy, gradient descent, classification binaire |
+| 2 | `exo_2_iris.ipynb` / `exo_pdf_2_iris.ipynb` | MLP sur Iris | Keras, MLP, classification multi-classes |
+| 3 | `exo_3_cnn_mnist.ipynb` / `exo_pdf_3_cnn_mnist.ipynb` | CNN sur MNIST | Conv2D, MaxPooling, images 28×28 |
+| 4 | `exo_4_cnn_fashion_mnist.ipynb` / `exo_pdf_4_cnn_fashion_mnist.ipynb` | CNN sur Fashion-MNIST | CNN, classification 10 classes |
+| 5 | `exo_2bis_titanic.ipynb` / `exo_pdf_5_titanic.ipynb` | MLP sur Titanic | Preprocessing, comparaison 4/16/64 neurones |
+| 6 | `exo_5_rnn_texte.ipynb` / `exo_pdf_6_rnn_victor-hugo.ipynb` | RNN — génération de texte | RNN/LSTM, NLP, prédiction mot suivant |
 
 ## 🔧 Prérequis
 
@@ -46,21 +46,28 @@ jupyter notebook
 jupyter lab
 ```
 
-Ouvrir les notebooks dans `notebook/` dans l'ordre : **1 → 2 → 2bis → 3 → 4 → 5**
+Ouvrir les notebooks dans `notebook/` dans l'ordre : **1 → 2 → 3 → 4 → 5 → 6** (version PDF corrigée : `exo_pdf_*`)
 
 ## 📁 Structure du projet
 
 ```
 DeepLearningIntro/
-├── notebook/               # 6 exercices Jupyter
+├── notebook/               # 12 notebooks Jupyter (6 exercices × 2 versions)
 │   ├── exo_1_perceptron.ipynb
 │   ├── exo_2_iris.ipynb
 │   ├── exo_2bis_titanic.ipynb
 │   ├── exo_3_cnn_mnist.ipynb
 │   ├── exo_4_cnn_fashion_mnist.ipynb
 │   ├── exo_5_rnn_texte.ipynb
-│   └── exos_html_1-3.ipynb  # source originale (archivée)
-├── data-sources/           # Textes pour l'exo 5 (RNN)
+│   ├── exo_pdf_1_perceptron.ipynb       # versions corrigées (source PDF)
+│   ├── exo_pdf_2_iris.ipynb
+│   ├── exo_pdf_3_cnn_mnist.ipynb
+│   ├── exo_pdf_4_cnn_fashion_mnist.ipynb
+│   ├── exo_pdf_5_titanic.ipynb
+│   └── exo_pdf_6_rnn_victor-hugo.ipynb
+├── data-sources/           # Textes pour les RNN (exo 5/6)
+│   ├── victor-hugo-texts.txt / victor-hugo-titles.txt
+│   ├── corpus.txt / bobby.txt / aya.txt / papayou.txt
 └── .gitignore
 ```
 
